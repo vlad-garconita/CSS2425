@@ -1,0 +1,29 @@
+a:visited{
+    color: brown;
+    font-size: 30px;
+}
+a:hover{
+    color: green;
+    font-size: 20px;
+}
+
+/* #varsta:focus{
+    border: 7px solid brown;
+} */
+
+input:focus{
+    outline: none;
+    border: 7px solid brown;
+}
+
+p:first-child{
+    color: blue;
+}
+
+
+p::first-letter{
+    text-transform:uppercase;
+}
+p::before{
+    content: '-'
+}

@@ -1,0 +1,18 @@
+div{
+    background-color: blueviolet;
+    color: black;
+    margin: auto;
+    border: 2px red solid;
+    
+    padding: 40px;
+    text-align: center;
+}
+div>div{
+    background-color: aquamarine;
+    color: brown;
+}
+div>div>div{
+
+    background-color: chartreuse;
+    color: chocolate;
+}

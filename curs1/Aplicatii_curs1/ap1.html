@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+            font-size: 25px;
+            color: green;
+        }
+        .demo2{
+            color: blue;
+            font-size: 10px;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+    <button id="apasa">Schimba culoarea</button>
+    <button id="apasa2">Schimba div</button>
+    <button id="apasa3"> Schimba demo</button>
+    <div id="para">
+        <p>Lorem, ipsum.</p>
+        <p>Tempora, exercitationem!</p>
+        <p>Nostrum, officia.</p>
+        <p>Minus, libero.</p>
+        <p>Velit, earum.</p>
+        <p>Perferendis, sint?</p>
+        <p>Facere, delectus!</p>
+        <p>Magnam, repellat?</p>
+        <p>Velit, sapiente?</p>
+        <p>Eos, dolorum.</p>
+    </div>
+
+    <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aperiam totam quis praesentium molestias commodi vitae dolorem nesciunt architecto libero?</p>
+    <p class="demo">Quae similique maxime, aliquid doloribus sunt commodi laborum iusto cupiditate optio placeat suscipit asperiores molestiae, ipsum sapiente animi odit perferendis!</p>
+    <p class="demo">Maxime incidunt repudiandae ea perferendis tenetur nam odio similique, recusandae odit architecto a ratione iure expedita nostrum modi fuga sunt!</p>
+    <p class="demo">Dolore, quidem laborum. Illum quasi ipsam esse culpa, provident qui impedit architecto modi ex facere labore quae odit. Sequi, alias.</p>
+
+
+    <script>
+        let p = document.getElementsByTagName('p');
+        let btn = document.getElementById('apasa');
+        let btn2 = document.getElementById('apasa2');
+        let div = document.getElementById('para');
+        let btn3 = document.getElementById('apasa3');
+        let paraDemo = document.getElementsByClassName('demo');
+
+        console.log(p); 
+        btn.addEventListener('click',function(){
+            // for (const element of p) {
+            //     element.style.color = 'red';
+            // }
+            let arry = [...p];
+            arry.forEach(element => {
+                element.style.color= 'red';
+            });
+
+            
+        });
+        btn2.addEventListener('click', function(){
+         div.style.cssText = ' background-color: black; color: aqua; margin: auto; border: 1px solid red; font-size:30 px;'
+
+        })
+
+        btn3.addEventListener('click', function(){
+            let myArr = [...paraDemo];
+            myArr.forEach((element) => {
+                element.classList.toggle('demo2')
+            });
+        })
+    </script>
+</body>
+
+</html>
