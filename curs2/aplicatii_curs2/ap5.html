@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/ap5.css">
+</head>
+<body>
+    <div style="position: relative; width: 640px; height: 320px; margin: 15px auto; overflow:hidden;"
+    >
+        <ul class="slider">
+            <li>
+                <img src="../poze/munti1.png" alt="1" width="640px">
+            </li>
+            <li>
+                <img src="../poze/munti2.png" alt="2" width="640px">
+            </li>
+            <li>
+                <img src="../poze/munti3.png" alt="3" width="640px">
+            </li>
+            <li>
+                <img src="../poze/munti4.png" alt="4" width="640px">
+            </li>
+            <li>
+                <img src="../poze/munti1.png" alt="5" width="640px">
+            </li>
+
+        </ul>
+    </div>
+
+    <script>
+        const images = document.getElementByTagName('img');
+        const slider = document.querySelector('.slider');
+        console.log("images :>>",images);
+        for(let i = 0;i<images.length;i++){
+            images(i).addEventListener('mosueover', function(eveniment){
+                // alert("1234")
+                slider.style.animation = "none";
+            });
+        }
+    </script>
+
+</body>
+</html>

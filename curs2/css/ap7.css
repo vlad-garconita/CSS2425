@@ -1,0 +1,17 @@
+a:hover{
+    text-decoration: none;
+}
+
+.column img{
+    display: block;
+}
+
+.column#sepia img {
+    filter: sepia(100%);
+    transition: .3s ease-in-out;
+}
+.column#sepia img:hover{
+    filter: sepia(0);
+
+}
+
